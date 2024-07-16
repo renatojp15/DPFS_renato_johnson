@@ -5,3 +5,15 @@ Hola! Soy Renato Johnson Preciado, Tengo 26 años, vivo en Panamá, en la provin
 ## Descripción del sitio
 ¡Bienvenido a "DOLZI DELIZIOSI"! tu destino en línea para los dulces más exquisitos y tentadores. Nuestro sitio web está diseñado para ofrecerte una experiencia de compra tan dulce como nuestros productos. Desde el momento en que llegas a nuestra página principal, serás recibido por imágenes vibrantes y apetitosas de nuestras mejores creaciones, acompañadas por un diseño limpio y moderno que hace que navegar sea un placer.
 
+## Sitios de referencias
+https://www.pricesmart.com/site/pa/es
+
+https://www.superxtra.com/?gad_source=1&gclid=EAIaIQobChMIqrza2dXlgwMV6p1aBR1CQg8-EAAYASAAEgI0KPD_BwE
+
+https://www.walmart.com/ 
+
+https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=159651196451&hvpone=&hvptwo=&hvadid=675114638556&hvpos=&hvnetw=g&hvrand=5550744843641420427&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1011094&hvtargid=kwd-10573980&hydadcr=2246_13649807 
+
+https://us.shein.com/ 
+
+Estos sitios fueron elegidos como referencia ya que, nos parecieron interesantes y llamativos sus diseños, mas aún sus estilos e interfaces muy llamativas
