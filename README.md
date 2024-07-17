@@ -17,3 +17,20 @@ https://www.amazon.com/?&tag=googleglobalp-20&ref=pd_sl_7nnedyywlk_e&adgrpid=159
 https://us.shein.com/ 
 
 Estos sitios fueron elegidos como referencia ya que, nos parecieron interesantes y llamativos sus diseños, mas aún sus estilos e interfaces muy llamativas
+
+## Links De Wireframes
+
+WIREFRAME DEL HOME
+https://wireframe.cc/tqO27T
+
+WIREFRAME DEL DETALLE DEL PRODUCTO
+https://wireframe.cc/uRaMKM
+
+WIREFRAME DEL CARRITO DE COMPRAS
+https://wireframe.cc/3UgAxc
+
+WIREFRAME DEL FORMULARIO DE REGISTRO
+https://wireframe.cc/yvm0f6
+
+WIREFRAME DEL FORMULARIO DE LOG IN
+https://wireframe.cc/M6jL0g
