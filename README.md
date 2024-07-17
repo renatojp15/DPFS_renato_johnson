@@ -20,17 +20,17 @@ Estos sitios fueron elegidos como referencia ya que, nos parecieron interesantes
 
 ## Links De Wireframes
 
-WIREFRAME DEL HOME
+### WIREFRAME DEL HOME
 https://wireframe.cc/tqO27T
 
-WIREFRAME DEL DETALLE DEL PRODUCTO
+### WIREFRAME DEL DETALLE DEL PRODUCTO
 https://wireframe.cc/uRaMKM
 
-WIREFRAME DEL CARRITO DE COMPRAS
+### WIREFRAME DEL CARRITO DE COMPRAS
 https://wireframe.cc/3UgAxc
 
-WIREFRAME DEL FORMULARIO DE REGISTRO
+### WIREFRAME DEL FORMULARIO DE REGISTRO
 https://wireframe.cc/yvm0f6
 
-WIREFRAME DEL FORMULARIO DE LOG IN
+### WIREFRAME DEL FORMULARIO DE LOG IN
 https://wireframe.cc/M6jL0g
