@@ -38,3 +38,6 @@ https://wireframe.cc/yvm0f6
 
 ### WIREFRAME DEL FORMULARIO DE LOG IN
 https://wireframe.cc/M6jL0g
+
+## TABLERO DE TAREAS 
+https://trello.com/b/a6Uqc6Gh/proyecto-digital-house
