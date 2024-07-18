@@ -1,6 +1,6 @@
 # DPFS_renato_johnson
 ## Descripción Personal
-Hola! Soy Renato Johnson Preciado, Tengo 26 años, vivo en Panamá, en la provincia de Colón soy una persona amante del deporte, mis deportes favoritos son el fútbol y el baloncesto (fanatico del mejor equipo "LAKERS"), pero además soy amante y muy apasionado a la programación, me encanta el mundo de la codificación tanto que disfruto muchísimo cuando me siento a programar, me gusta la música, prácticamente todos los géneros y amante de la naturaleza.
+Hola! Soy Renato Johnson Preciado, Tengo 26 años, vivo en Panamá, en la provincia de Colón soy una persona amante del deporte, mis deportes favoritos son el fútbol y el baloncesto (fanático del mejor equipo "LAKERS"), pero además soy amante y muy apasionado a la programación, me encanta el mundo de la codificación tanto que disfruto muchísimo cuando me siento a programar, me gusta la música, prácticamente todos los géneros y amante de la naturaleza.
 
 ## Descripción del sitio
 ¡Bienvenido a "HorizonMarket"! Nuestra página es tu destino único para satisfacer todas tus necesidades de compras en línea, ofecemos una amplia variedad de productos de alta calidad y las mejores marcas. Estamos aquí para hacer que tu experiencia de compra sea fácil, conveniente y emocionante.
