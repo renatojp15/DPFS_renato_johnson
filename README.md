@@ -3,7 +3,11 @@
 Hola! Soy Renato Johnson Preciado, Tengo 26 años, vivo en Panamá, en la provincia de Colón soy una persona amante del deporte, mis deportes favoritos son el fútbol y el baloncesto (fanatico del mejor equipo "LAKERS"), pero además soy amante y muy apasionado a la programación, me encanta el mundo de la codificación tanto que disfruto muchísimo cuando me siento a programar, me gusta la música, prácticamente todos los géneros y amante de la naturaleza.
 
 ## Descripción del sitio
-¡Bienvenido a "DOLZI DELIZIOSI"! tu destino en línea para los dulces más exquisitos y tentadores. Nuestro sitio web está diseñado para ofrecerte una experiencia de compra tan dulce como nuestros productos. Desde el momento en que llegas a nuestra página principal, serás recibido por imágenes vibrantes y apetitosas de nuestras mejores creaciones, acompañadas por un diseño limpio y moderno que hace que navegar sea un placer.
+¡Bienvenido a "HorizonMarket"! Nuestra página es tu destino único para satisfacer todas tus necesidades de compras en línea, ofecemos una amplia variedad de productos de alta calidad y las mejores marcas. Estamos aquí para hacer que tu experiencia de compra sea fácil, conveniente y emocionante.
+
+Explora nuestro extenso catálogo, que abarca desde tecnología de vanguardia hasta moda elegante, artículos para el hogar, juguetes para todas las edades y mucho más. Además podrás navegar por nuestras múltples categorías, en donde, podrás descubrir ofertas irresistibles que se actualizan constantemente para ofrecerte los precios más competitivos del mercado. Garantizamos una experiencia de compra segura y protegida, con opciones de pago flexibles y envío rápido para que tus productos lleguen a tu puerta en tiempo récord.
+
+No te pierdas nuestras promociones exclusivas, descuentos y eventos especiales que te permitirán ahorrar aún más mientras disfrutas de productos de alta calidad. "HorizonMarket" está diseñada para ser tu destino preferido, donde encontrarás todo lo que necesitas, y un poco más. ¡Explora, descubre y compra con confianza en nuestra tienda en línea definitiva!
 
 ## Sitios de referencias
 https://www.pricesmart.com/site/pa/es
