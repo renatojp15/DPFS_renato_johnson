@@ -3,7 +3,7 @@
 Hola! Soy Renato Johnson Preciado, Tengo 26 años, vivo en Panamá, en la provincia de Colón soy una persona amante del deporte, mis deportes favoritos son el fútbol y el baloncesto (fanático del mejor equipo "LAKERS"), pero además soy amante y muy apasionado a la programación, me encanta el mundo de la codificación tanto que disfruto muchísimo cuando me siento a programar, me gusta la música, prácticamente todos los géneros y amante de la naturaleza.
 
 ## Descripción del sitio
-¡Bienvenido a "HorizonMarket"! Nuestra página es tu destino único para satisfacer todas tus necesidades de compras en línea, ofecemos una amplia variedad de productos de alta calidad y las mejores marcas. Estamos aquí para hacer que tu experiencia de compra sea fácil, conveniente y emocionante.
+¡Bienvenido a "MercadoLiebre"! Nuestra página es tu destino único para satisfacer todas tus necesidades de compras en línea, ofecemos una amplia variedad de productos de alta calidad y las mejores marcas. Estamos aquí para hacer que tu experiencia de compra sea fácil, conveniente y emocionante.
 
 Explora nuestro extenso catálogo, que abarca desde tecnología de vanguardia hasta moda elegante, artículos para el hogar, juguetes para todas las edades y mucho más. Además podrás navegar por nuestras múltples categorías, en donde, podrás descubrir ofertas irresistibles que se actualizan constantemente para ofrecerte los precios más competitivos del mercado. Garantizamos una experiencia de compra segura y protegida, con opciones de pago flexibles y envío rápido para que tus productos lleguen a tu puerta en tiempo récord.
 
