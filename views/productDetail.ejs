@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head'); -%>
+<body>
+    <%- include('../views/partials/header'); -%>
+
+    <h1><%= producto.name %></h1>
+    <div class="products-detail">
+        <img src="<%= producto.image %>" alt="<%= producto.name %>">
+        <p><strong>Descripción:</strong> <%= producto.description %></p>
+        <p><strong>Categoría:</strong> <%= producto.category %></p>
+        <p><strong>Colores disponibles:</strong> <%= producto.colors.join(', ') %></p>
+        <p><strong>Precio:</strong> $<%= producto.price %></p>
+    </div>
+    <a class="link-productList" href="/productList">Volver a la lista de productos</a>
+
+    <%- include('../views/partials/footer'); -%>
+</body>
+</html>

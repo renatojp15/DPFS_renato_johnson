@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head'); -%>
+<body>
+    <%- include('../views/partials/header'); -%>
+
+    <main>
+        <div class="formulario">
+            <h1>INGRESAR</h1>
+            <form action="" method="post">
+                <h2>LOGIN</h2>
+                <div class="input">
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre De Usuario">
+                </div>
+
+                <div class="input">
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                </div>
+
+                <div class="boton">
+                    <button type="submit"><a href="">Enviar</a></button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <%- include('../views/partials/footer'); -%>
+
+</body>
+</html>
