@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head'); -%>
+<body>
+    <%- include('../views/partials/header'); -%>
+
+    <h1>Bienvenido, <%= user.firstName %> <%= user.lastName %>!</h1>
+    <p>Email: <%= user.email %></p>
+    <a href="/login/logout">Cerrar Sesión</a>
+
+    <%- include('../views/partials/footer'); -%>
+</body>
+</html>
