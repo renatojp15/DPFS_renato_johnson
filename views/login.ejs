@@ -7,20 +7,25 @@
     <main>
         <div class="formulario">
             <h1>INGRESAR</h1>
-            <form action="" method="post">
+            <form action="/login" method="POST">
                 <h2>LOGIN</h2>
                 <div class="input">
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre De Usuario">
+                    <input type="email" name="email" id="email" placeholder="Correo">
                 </div>
 
                 <div class="input">
-                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
                 </div>
 
                 <div class="boton">
-                    <button type="submit"><a href="">Enviar</a></button>
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
+
+            <% if (typeof error !== 'undefined') { %>
+                <p style="color: red;"><%= error %></p>
+            <% } %>
+
         </div>
     </main>
 

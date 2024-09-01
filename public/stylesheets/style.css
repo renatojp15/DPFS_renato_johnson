@@ -126,10 +126,16 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.btn-eliminate{
+  display: flex;
+  gap: 15px;
+}
+
 .link-productList a:hover {
   background-color: #007BFF;
   color: #fff;
 }
+
 /* --------------------------- Fin de estilos de detalle del producto ----------------------------------- */
 
 /* --------------------------------- Estilos de Lista De Productos ------------------------------ */

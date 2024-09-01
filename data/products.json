@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S10",
+      "description": "Samsung Galaxy S10, Tres Cámaras, 12 pulgadas",
+      "image": "/images/img-samsung-galaxy-s10.jpg",
+      "category": "Electrónico",
+      "colors": [
+        "Blanco",
+        "Negro"
+      ],
+      "price": 349.99
+    },
+    {
+      "id": 2,
+      "name": "Cafetera Moulinex",
+      "description": "Cafetera Moulinex Dolce Gusto Mini Me Roja",
+      "image": "/images/img-cafetera-moulinex.jpg",
+      "category": "Electrónico",
+      "colors": [
+        "Rojo",
+        "Negro"
+      ],
+      "price": 119.99
+    },
+    {
+      "id": 3,
+      "name": "MacBook Pro Apple",
+      "description": "MacBook Pro Apple, pantalla 18 pulgadas, 500 GB",
+      "image": "/images/img-macbook-pro-2019.jpg",
+      "category": "Electrónico",
+      "colors": [
+        "Blanco",
+        "Negro"
+      ],
+      "price": 899.99
+    },
+    {
+      "id": 4,
+      "name": "Smart TV Samsumg",
+      "description": "Smart TV Samsung, 75 pulgadas, incluye: Roku TV",
+      "image": "/images/img-tv-samsung-smart.jpg",
+      "category": "Electrónico",
+      "colors": [
+        "Blanco",
+        "Negro"
+      ],
+      "price": 1999.99
+    },
+    {
+      "id": 1725220235051,
+      "name": "Nintendo Switch",
+      "description": "Nintendo Switch 500GB ",
+      "image": "/images/1725221387043.jpg",
+      "category": "electrónicos",
+      "colors": [
+        "Rojo",
+        "Azul"
+      ],
+      "price": 399.99
+    }
+  ]
+}

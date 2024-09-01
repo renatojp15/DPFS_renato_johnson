@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head'); -%>
+<body>
+    
+    <%- include('../views/partials/header'); -%>
+
+
+<main>
+    <div class="formulario">
+        <h1>NUEVO PRODUCTO</h1>
+        <form action="/products" method="POST" enctype="multipart/form-data">
+            <h2>CREAR PRODUCTO</h2>
+            <div class="input">
+                <input type="text" name="name" id="name" placeholder="Nombre Del Producto" required>
+            </div>
+
+            <div class="input">
+                <input type="text" name="description" id="description" placeholder="Descripción" required>
+            </div>
+
+            <div class="input">
+                <input type="file" name="image" id="image" placeholder="Imagen" required>
+            </div>
+
+            <div class="input">
+                <input type="text" name="category" id="category" placeholder="Categoría" required>
+            </div>
+
+            <div class="input">
+                <input type="text" name="colors" id="colors" placeholder="Color" required>
+            </div>
+
+            <div class="input">
+                <input type="number" name="price" id="price" step="0.01" placeholder="Precio" required>
+            </div>
+
+            <div class="botones">
+                <button type="submit">Crear</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<%- include('../views/partials/footer'); -%>
+    
+</body>
+</html>

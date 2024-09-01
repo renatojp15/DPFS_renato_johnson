@@ -4,15 +4,21 @@
 <body>
     <%- include('../views/partials/header'); -%>
 
-    <h1><%= producto.name %></h1>
+    <h1><%= product.name %></h1>
     <div class="products-detail">
-        <img src="<%= producto.image %>" alt="<%= producto.name %>">
-        <p><strong>Descripción:</strong> <%= producto.description %></p>
-        <p><strong>Categoría:</strong> <%= producto.category %></p>
-        <p><strong>Colores disponibles:</strong> <%= producto.colors.join(', ') %></p>
-        <p><strong>Precio:</strong> $<%= producto.price %></p>
+        <img src="<%= product.image %>" alt="<%= product.name %>">
+        <p><strong>Descripción:</strong> <%= product.description %></p>
+        <p><strong>Categoría:</strong> <%= product.Category %></p>
+        <p><strong>Colores disponibles:</strong> <%= product.colors.map(color => color.name).join(', ') %></p>
+        <p><strong>Precio:</strong> $<%= product.price %></p>
     </div>
-    <a class="link-productList" href="/productList">Volver a la lista de productos</a>
+    <div class="btn-eliminate">
+    <a class="link-productList" href="/products">Volver a la lista de productos</a>
+    <a class="link-productList" href="/products/<%= product.id %>/edit">Modificar Producto</a>
+    <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
+        <button class="link-productList" type="submit">Eliminar Producto</button>
+    </form>
+    </div>
 
     <%- include('../views/partials/footer'); -%>
 </body>

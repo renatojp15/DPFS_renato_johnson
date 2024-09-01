@@ -1,0 +1,5 @@
+<select name="categoryId" required>
+                <% categories.forEach(category => { %>
+                    <option value="<%= category.id %>" <%= product.categoryId === category.id ? 'selected' : '' %>><%= category.name %></option>
+                <% }); %>
+</select>

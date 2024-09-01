@@ -1,0 +1,13 @@
+{
+    "users": [
+      {
+        "id": 1724833509195,
+        "firstName": "Renato",
+        "lastName": "Johnson",
+        "email": "renatoj.p@outlook.com",
+        "password": "$2a$10$jSFWp3nQbp/10ckZP7IIAuadVDkm8Mdnq8U99MhjD6X6URrd3al02",
+        "category": "Programador",
+        "image": "/images/profiles/1724833508804-649365119.jfif"
+      }
+    ]
+  }
