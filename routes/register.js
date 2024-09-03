@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 let isGuest = require('../middlewares/isGuest');
+let registerValidator = require('../middlewares/registerValidator');
 let registerControllers = require('../controllers/registerControllers');
 let bodyParser = require('body-parser');
 const multer = require('multer');
@@ -22,7 +23,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 router.get('/', registerControllers.create);
-router.post('/', upload.single('image'), registerControllers.send);
+router.post('/', upload.single('image'), registerValidator, registerControllers.send);
 router.get('/:id', registerControllers.detail);
 router.get('/:id/edit', registerControllers.edit);
 router.put('/:id', upload.single('image'), registerControllers.modifying);

@@ -2,6 +2,7 @@ let productsControllers = {
 
     create: async (req, res) => {
         let db = require('../database/models');
+
         try {
             const categories = await db.Categoria.findAll(); // Obtener todas las categorías para el formulario
             res.render('productCreate', { categories }); // Renderizar la vista del formulario de creación y pasar las categorías
@@ -13,6 +14,13 @@ let productsControllers = {
 
     send: async (req, res) => {
         let db = require('../database/models');
+        const { validationResult } = require('express-validator');
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            const categories = await db.Categoria.findAll(); // Volver a obtener las categorías en caso de error
+            return res.render('productCreate', { categories, errors: errors.array() });
+        }
+
         try {
             const { name, description, category_id, price, colors } = req.body;
             
@@ -77,6 +85,16 @@ let productsControllers = {
 
     modifying: async (req, res) => {
         let db = require('../database/models');
+        const { validationResult } = require('express-validator');
+
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            const productId = req.params.id;
+            const product = await db.Producto.findByPk(productId);
+            const categories = await db.Categoria.findAll();
+            return res.render('productEdit', { product, categories, errors: errors.array() });
+        }
+
         try {
             const { id } = req.params;
             const { name, description, category_id, price, colors } = req.body;

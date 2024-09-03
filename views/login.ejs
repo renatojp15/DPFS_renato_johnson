@@ -7,7 +7,7 @@
     <main>
         <div class="formulario">
             <h1>INGRESAR</h1>
-            <form action="/login" method="POST">
+            <form action="/login" method="POST" id="loginForm">
                 <h2>LOGIN</h2>
                 <div class="input">
                     <input type="email" name="email" id="email" placeholder="Correo">
@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="boton">
-                    <button type="submit">Enviar</button>
+                    <button type="submit">Ingresar</button>
                 </div>
             </form>
 
@@ -31,5 +31,6 @@
 
     <%- include('../views/partials/footer'); -%>
 
+    <script src="../javascripts/validationLogin.js"></script>
 </body>
 </html>

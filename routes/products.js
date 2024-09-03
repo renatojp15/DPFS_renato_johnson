@@ -3,6 +3,7 @@ var router = express.Router();
 let bodyParser = require('body-parser');
 const multer = require('multer');
 let path = require('path');
+const {validateProduct} = require('../middlewares/validateProduct');
 let productsControllers = require('../controllers/productsControllers');
 const methodOverride = require('method-override');
 router.use(methodOverride('_method'));
@@ -21,10 +22,10 @@ const upload = multer({ storage: storage });
 router.use(bodyParser.json());
 
 router.get('/create', productsControllers.create);
-router.post('/', upload.single('image'), productsControllers.send);
+router.post('/', upload.single('image'), validateProduct, productsControllers.send);
 router.get('/', productsControllers.list);
 router.get('/:id/edit', productsControllers.edition);
-router.put('/:id', upload.single('image'), productsControllers.modifying);
+router.put('/:id', upload.single('image'), validateProduct, productsControllers.modifying);
 router.get('/:id', productsControllers.detail);
 router.delete('/:id', productsControllers.delete);
 

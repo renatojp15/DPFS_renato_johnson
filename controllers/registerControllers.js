@@ -6,7 +6,16 @@ let registerControllers = {
 
     send: async (req, res) => {
         let db = require('../database/models');
+        const { validationResult } = require('express-validator');
         const bcrypt = require('bcryptjs');
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            return res.render('register', {
+                errors: errors.array(),
+                oldData: req.body
+            });
+        }
   
           try {
             const { firstName, lastName, email, password, category } = req.body;
@@ -26,7 +35,7 @@ let registerControllers = {
             console.error(error);
             res.status(500).send('Error al crear el usuario');
           }
-        },
+},
 
         detail:  async (req, res) => {
             let db = require('../database/models');

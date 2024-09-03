@@ -2,60 +2,12 @@ var express = require('express');
 var router = express.Router();
 let isAuthenticated = require('../middlewares/isAuthenticated');
 let isGuest = require('../middlewares/isGuest');
+let {validateLogin} = require('../middlewares/validateLogin');
+let loginControllers = require('../controllers/loginControllers');
 
-router.get('/', (req, res) => {
-    res.render('login');
-});
-
-router.post('/', async (req, res) => {
-    let db = require('../database/models');
-    const bcrypt = require('bcryptjs');
-
-    try {
-        const { email, password } = req.body;
-
-        // Buscar el usuario en la base de datos por su email
-        const user = await db.Usuario.findOne({
-            where: { email }
-        });
-
-        if (!user) {
-            return res.status(401).send('Usuario no encontrado o contraseña incorrecta');
-        }
-
-        // Verificar la contraseña usando bcrypt
-        const isMatch = await bcrypt.compare(password, user.password);
-
-        if (!isMatch) {
-            return res.status(401).send('Usuario no encontrado o contraseña incorrecta');
-        }
-
-        // Guardar el usuario en la sesión
-        req.session.user = {
-            id: user.id,
-            firstName: user.firstName,
-            lastName: user.lastName,
-            email: user.email,
-            category: user.category,
-            image: user.image
-        };
-
-        res.redirect('/login/profile'); // Redirigir al usuario a su dashboard o página principal después de loguearse
-    } catch (error) {
-        console.error('Error durante el proceso de login:', error);
-        res.status(500).send('Hubo un problema durante el proceso de login');
-    }
-});
-
-router.get('/logout', (req, res) => {
-    req.session.destroy(err => {
-        if (err) {
-            console.error('Error al cerrar sesión:', err);
-            return res.status(500).send('Hubo un problema al cerrar sesión');
-        }
-        res.redirect('/login'); // Redirigir al formulario de login
-    });
-});
+router.get('/', loginControllers.login);
+router.post('/', validateLogin, loginControllers.send);
+router.get('/logout', loginControllers.logout);
 
 // router.post('/', (req, res) => {
 //     const bcrypt = require('bcryptjs');
