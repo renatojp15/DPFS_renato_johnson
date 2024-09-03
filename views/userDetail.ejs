@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head'); -%>
+<body>
+    <%- include('../views/partials/header'); -%>
+
+    <h1><%= user.firstName %> <%= user.lastName %></h1>
+    <img src="/images/profiles/<%= user.image %>" alt="<%= user.firstName %> <%= user.lastName %>">
+    <p>Correo Electrónico: <%= user.email %></p>
+    <p>Categoría: <%= user.category %></p>
+    <a href="/register/<%= user.id %>/edit">Editar</a>
+
+    <%- include('../views/partials/footer'); -%>
+</body>
+</html>

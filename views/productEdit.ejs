@@ -22,12 +22,14 @@
                 <input type="file" name="image" id="image" placeholder="Imagen" required>
             </div>
 
-            <div class="input">
-                <input type="text" name="category" id="category" value="<%= product.category %>" placeholder="Categoría" required>
-            </div>
+            <select class="input" name="category_id" required>
+                <% categories.forEach(category => { %>
+                    <option value="<%= category.id %>"><%= category.name %></option>
+                <% }); %>
+            </select>
 
             <div class="input">
-                <input type="text" name="colors" id="colors" value="<%= product.colors.map(color => color.name).join(', ') %>" placeholder="Color" required>
+                <input type="text" name="colors" id="colors" value="<%= product.colors %>" placeholder="Color" required>
             </div>
 
             <div class="input">

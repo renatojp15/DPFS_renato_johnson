@@ -1,8 +1,13 @@
 var express = require('express');
 var router = express.Router();
 let isGuest = require('../middlewares/isGuest');
+let registerControllers = require('../controllers/registerControllers');
+let bodyParser = require('body-parser');
 const multer = require('multer');
 const path = require('path');
+const methodOverride = require('method-override');
+router.use(methodOverride('_method'));
+router.use(bodyParser.json());
 
 // Configuración de Multer para subir imágenes
 const storage = multer.diskStorage({
@@ -16,54 +21,11 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
-router.get('/', (req, res) => {
-    res.render('register');
-});
-
-router.post('/', upload.single('image'), (req, res) => {
-        const path = require('path');
-        const fs = require('fs');
-        const bcrypt = require('bcryptjs');
-        const saltRounds = 10; // Número de saltos para la encriptación
-        const filePath = path.join(__dirname, '../data/users.json');
-    
-        fs.readFile(filePath, 'utf-8', (err, data) => {
-            if (err) return res.status(500).send('Error leyendo el archivo JSON');
-    
-            let jsonData;
-            try {
-                jsonData = JSON.parse(data);
-            } catch (parseError) {
-                return res.status(500).send('Error al parsear el archivo JSON');
-            }
-    
-            bcrypt.hash(req.body.password, saltRounds, (err, hashedPassword) => {
-                if (err) return res.status(500).send('Error encriptando la contraseña');
-    
-                const newUser = {
-                    id: Date.now(),
-                    firstName: req.body.firstName,
-                    lastName: req.body.lastName,
-                    email: req.body.email,
-                    password: hashedPassword,
-                    category: req.body.category,
-                    image: req.file ? '/images/profiles/' + req.file.filename : ''
-                };
-    
-                jsonData.users.push(newUser);
-    
-                fs.writeFile(filePath, JSON.stringify(jsonData, null, 2), (writeErr) => {
-                    if (writeErr) return res.status(500).send('Error escribiendo en el archivo JSON');
-                    res.redirect('/');
-                });
-            });
-        });
-    });
-
-//router.get('/user/:id', usersControllers.detail);
-
-// router.put('/user/:id', upload.single('image'), usersControllers.edit);
-
+router.get('/', registerControllers.create);
+router.post('/', upload.single('image'), registerControllers.send);
+router.get('/:id', registerControllers.detail);
+router.get('/:id/edit', registerControllers.edit);
+router.put('/:id', upload.single('image'), registerControllers.modifying);
 router.get('/', isGuest, (req, res) => res.render('register'));
 
 module.exports = router;

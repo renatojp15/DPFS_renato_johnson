@@ -47,18 +47,6 @@
         "Negro"
       ],
       "price": 1999.99
-    },
-    {
-      "id": 1725220235051,
-      "name": "Nintendo Switch",
-      "description": "Nintendo Switch 500GB ",
-      "image": "/images/1725221387043.jpg",
-      "category": "electrónicos",
-      "colors": [
-        "Rojo",
-        "Azul"
-      ],
-      "price": 399.99
     }
   ]
 }

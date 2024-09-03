@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head'); -%>
+<body>
+    <%- include('../views/partials/header'); -%>
+
+    <main>
+    <div class="formulario">
+    <h1>Editar Usuario</h1>
+
+    <form action="/register/<%= user.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <div class="input">
+            <input type="text" name="firstName" value="<%= user.firstName %>" required>
+        </div>
+
+        <div class="input">
+            <input type="text" name="lastName" value="<%= user.lastName %>" required>
+        </div>
+
+        <div class="input">
+            <input type="email" name="email" value="<%= user.email %>" required>
+        </div>
+
+        <select name="category" required>
+            <option value="user" <%= user.category === 'user' ? 'selected' : '' %>>Usuario</option>
+            <option value="admin" <%= user.category === 'admin' ? 'selected' : '' %>>Administrador</option>
+        </select>
+
+        <div class="input">
+            <input type="file" name="image">
+        </div>
+
+        <button type="submit">Guardar Cambios</button>
+    </form>
+    </div>
+</main>
+
+    <%- include('../views/partials/footer'); -%>
+</body>
+</html>

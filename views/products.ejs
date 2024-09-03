@@ -11,13 +11,13 @@
     <h2 class="title-list-product">LISTA DE PRODUCTOS</h2>
 
     <div class="products-container">
-        <% productos.forEach(product => { %>
+        <% products.forEach(product => { %>
             <div class="product-card">
                 <h2><%= product.name %></h2>
-                <a href="/products/<%= product.id %>"><img src="<%= product.image %>" alt="<%= product.name %>"></a>
+                <a href="/products/<%= product.id %>"><img src="/images/<%= product.image %>" alt="<%= product.name %>"></a>
                 <p><%= product.description %></p>
                 <p>Categoría: <%= product.category %></p>
-                <p>Colores disponibles: <%= product.colors.join(', ') %></p>
+                <p>Colores disponibles: <%= product.colors %></p>
                 <p>Precio: $<%= product.price %></p>
             </div>
         <% }); %>

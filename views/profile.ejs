@@ -4,6 +4,10 @@
 <body>
     <%- include('../views/partials/header'); -%>
 
+    <div class="product-carga">
+        <a href="/register/<%= user.id %>"><p> Detalle Del Usuario </p></a>
+    </div>
+
     <h1>Bienvenido, <%= user.firstName %> <%= user.lastName %>!</h1>
     <p>Email: <%= user.email %></p>
     <a href="/login/logout">Cerrar Sesión</a>
