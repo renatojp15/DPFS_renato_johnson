@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import '../src/Dashboard.css';  // Importa el archivo de estilos
 
 function TotalUsers() {
   const [totalUsers, setTotalUsers] = useState(0);
