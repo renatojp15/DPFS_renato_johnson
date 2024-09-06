@@ -4,7 +4,7 @@ function TotalUsers() {
   const [totalUsers, setTotalUsers] = useState(0);
 
   useEffect(() => {
-    fetch('/api/users')
+    fetch('http://localhost:5000/api/users')
       .then(response => response.json())
       .then(data => setTotalUsers(data.count))
       .catch(error => console.error('Error fetching total users:', error));

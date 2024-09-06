@@ -5,7 +5,7 @@ const TotalProducts = () => {
   const [totalProducts, setTotalProducts] = useState(0);
 
   useEffect(() => {
-    fetch('/api/products')
+    fetch('http://localhost:5000/api/products')
       .then(response => {
         setTotalProducts(response.data.count);
       })
