@@ -35,5 +35,14 @@ module.exports = (sequelize, DataTypes) => {
             tableName: 'Productos',
             timestamps: false,
         });
+
+         // Define la relación con la tabla `Categorias`
+        Producto.associate = (models) => {
+            Producto.belongsTo(models.Categoria, { 
+                foreignKey: 'category_id', 
+                as: 'Categoria'  // Asegúrate de usar el alias "Categoria"
+            });
+    };
+
     return Producto;
 }

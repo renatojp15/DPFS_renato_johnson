@@ -6,12 +6,9 @@ const TotalProducts = () => {
 
   useEffect(() => {
     fetch('http://localhost:5000/api/products')
-      .then(response => {
-        setTotalProducts(response.data.count);
-      })
-      .catch(error => {
-        console.error('Error fetching total products:', error);
-      });
+      .then(response => response.json())
+      .then(data => setTotalProducts(data.count))
+      .catch(error => console.error('Error fetching total users:', error));
   }, []);
 
   return (

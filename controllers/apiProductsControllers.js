@@ -4,7 +4,7 @@ let apiProductsControllers = {
     list: async (req, res) => {
         try {
             const products = await db.Producto.findAll({
-                include: [{ model: db.Categoria }]
+                include: [{ model: db.Categoria, as: 'Categoria' }]
             });
 
             const countByCategory = {};
