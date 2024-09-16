@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 // Servir los archivos estáticos de React
 // app.use(express.static(path.join(__dirname, '../FrontEnd/build')));
 
-// // Manejar cualquier otra ruta con React
+// Manejar cualquier otra ruta con React
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, '../FrontEnd/build', 'index.html'));
 // });
