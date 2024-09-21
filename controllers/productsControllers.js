@@ -1,7 +1,8 @@
+let db = require('../database/models');
+
 let productsControllers = {
 
     create: async (req, res) => {
-        let db = require('../database/models');
 
         try {
             const categories = await db.Categoria.findAll(); // Obtener todas las categorías para el formulario
@@ -13,7 +14,7 @@ let productsControllers = {
     },
 
     send: async (req, res) => {
-        let db = require('../database/models');
+
         const { validationResult } = require('express-validator');
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
@@ -53,7 +54,7 @@ let productsControllers = {
     },
 
     list: async (req, res) => {
-        const db = require('../database/models');
+
         try {
             const products = await db.Producto.findAll({
                 include: [{ model: db.Categoria }, { model: db.Color }]
@@ -66,7 +67,7 @@ let productsControllers = {
     }, 
 
     edition: async (req, res) => {
-        let db = require('../database/models');
+
         try {
             const productId = req.params.id;
             const product = await db.Producto.findByPk(productId, {
@@ -84,7 +85,7 @@ let productsControllers = {
     },
 
     modifying: async (req, res) => {
-        let db = require('../database/models');
+
         const { validationResult } = require('express-validator');
 
         const errors = validationResult(req);
@@ -133,7 +134,7 @@ let productsControllers = {
       },
 
       detail: async (req, res) => {
-        let db = require('../database/models');
+
         try {
             const { id } = req.params;
             const categories = await db.Categoria.findAll();
@@ -152,7 +153,7 @@ let productsControllers = {
       },
 
       delete: async (req, res) => {
-        let db = require('../database/models');
+
         try {
             const { id } = req.params;
             const product = await db.Producto.findByPk(id);
