@@ -20,9 +20,15 @@
             <li><a href="#">Ayuda</a></li>   
         </ul>
         <ul class="login-bar">
-            <li><a href="/register">Registro</a><i class="far fa-id-card"></i></li>
-            <li><a href="/login">Ingresar</a><i class="fas fa-sign-in-alt"></i></li>
-            <li><a href="/productCart">Carrito De Compras</a><i class="fas fa-shopping-basket"></i></li>
+            <% if (user) { %>
+                <li style="color: rgb(9, 9, 107);">Hola, <%= user.firstName %><i style="color: green;" class="fa-solid fa-circle"></i></li>
+                <li><a href="/register/<%= user.id %>">Ir al Perfil</a><i class="fa-solid fa-id-card"></i></li>
+                <li><a href="/login/logout">Cerrar Sesión</a><i style="color: red;" class="fa-solid fa-circle"></i></li>
+                <li><a href="/productCart">Carrito De Compras</a><i class="fas fa-shopping-basket"></i></li>
+              <% } else { %>
+                <li><a href="/register">Registro</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresar</a><i class="fas fa-sign-in-alt"></i></li>
+              <% } %>
         </ul>
     </nav>
 
