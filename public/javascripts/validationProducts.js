@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Validar descripción
-        if (description.length < 20) {
+        if (description.length < 10) {
             valid = false;
-            errors.push('La descripción debe tener al menos 20 caracteres.');
+            errors.push('La descripción debe tener al menos 10 caracteres.');
         }
 
         // Validar imagen
