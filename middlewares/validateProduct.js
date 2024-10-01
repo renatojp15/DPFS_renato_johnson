@@ -6,7 +6,7 @@ exports.validateProduct = [
         .isLength({ min: 5 }).withMessage('El nombre debe tener al menos 5 caracteres'),
     body('description')
         .notEmpty().withMessage('La descripción es obligatoria')
-        .isLength({ min: 20 }).withMessage('La descripción debe tener al menos 20 caracteres'),
+        .isLength({ min: 10 }).withMessage('La descripción debe tener al menos 20 caracteres'),
     body('image').custom((value, { req }) => {
         if (!req.file) return true; // No es obligatorio subir una imagen
         const validExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
