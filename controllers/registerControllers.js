@@ -1,13 +1,13 @@
-let registerControllers = {
+let db = require('../database/models');
+const { validationResult } = require('express-validator');
+const bcrypt = require('bcryptjs');
 
+let registerControllers = {
     create: (req, res) => {
         res.render('register');
     },
 
     send: async (req, res) => {
-        let db = require('../database/models');
-        const { validationResult } = require('express-validator');
-        const bcrypt = require('bcryptjs');
         const errors = validationResult(req);
 
         if (!errors.isEmpty()) {
@@ -38,7 +38,6 @@ let registerControllers = {
 },
 
         detail:  async (req, res) => {
-            let db = require('../database/models');
     
             try {
               const { id } = req.params;
@@ -56,7 +55,6 @@ let registerControllers = {
           },
 
           edit: async (req, res) => {
-            let db = require('../database/models');
             try {
                 const userId = req.params.id;
                 const user = await db.Usuario.findByPk(userId);
@@ -73,8 +71,6 @@ let registerControllers = {
         },
 
         modifying: async (req, res) => {
-
-        let db = require('../database/models');
         try {
         const { id } = req.params;
         const { firstName, lastName, email, category } = req.body;
